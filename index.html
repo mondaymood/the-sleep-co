@@ -11,7 +11,9 @@
     <!---- This is the grid stylesheet ---->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">
 
-    <!---- This is the google fonts ---->
+    <!---- This is the google fonts (Catamaran 200, 400, 500, 800) ---->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;800&display=swap" rel="stylesheet">
 
     <!---- These are our icons (Font Awesome) ---->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,34 +28,37 @@
 
  
     <!-------------- This is the header -------------->
-    <header class="padded grid">
+    <header class="padded grid text-center tall-100">
         <div class="col-12-middle">
-        <h3>Sleep like a baby</h1>
-        <h1>The ultimate matress solution</h1>
+        <h3 class="bold-weight"><span class="highlight">Sleep</span> like a baby</h1>
+        <h1 class="normal-weight">The ultimate matress solution</h1>
         </div>
     </header>
 
     <!-------------- This the gallery section -------------->
     <section class="grid">
-        <div class="padded col-6">
-            <h2>Built to last a lifetime</h2>
+        <div class="padded col-6-middle">
+            <h2>Built to last a <span class="highlight">lifetime</span></h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus beatae possimus provident maiores quis repellat nihil omnis ratione, adipisci reiciendis illum totam ab eum neque ipsam facere nostrum eligendi quaerat.</p>
+            <p>Necessitatibus beatae possimus provident maiores quis repellat nihil omnis ratione, adipisci reiciendis illum totam ab eum neque ipsam facere nostrum eligendi quaerat.</p>
         </div>
-        <div class="bg-image col-6">
+        <div class="bg-image bg-blue col-6 tall-70">
             <!---- Background image bed ---->
         </div>
-        <div class="bg-image col-6">   
+        <div class="bg-image bg-pug col-6 tall-70">   
             <!---- Background image bed ---->
         </div>  
-        <div class="padded col-6"> 
-            <h2>So soft you'll melt</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus beatae possimus provident maiores quis repellat nihil omnis ratione, adipisci reiciendis illum totam ab eum neque ipsam facere nostrum eligendi quaerat.</p></div>
+        <div class="padded col-6-middle"> 
+            <h2>So <span class="highlight">soft</span> you'll melt</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus beatae possimus provident maiores quis repellat nihil omnis ratione, adipisci reiciendis illum totam ab eum neque ipsam facere nostrum eligendi quaerat.</p>
+            <p>Necessitatibus beatae possimus provident maiores quis repellat nihil omnis ratione, adipisci reiciendis illum totam ab eum neque ipsam facere nostrum eligendi quaerat.</p>
+        </div>
     </section>
 
     <!-------------- These are the features -------------->
     <section class="padded grid bg-dark">
-        <div class="padded-s col-12">
-            <h2>Features you will love</h2>
+        <div class="padded-s col-12 text-center">
+            <h2><span class="highlight">Features</span> you will love</h2>
         </div>
         <div class="padded-s col-3">
             <i class="fas fa-cloud"></i>
@@ -71,30 +76,40 @@
     </section>
 
     <!-------------- This is the banner -------------->
-    <section class="padded">
-        <h3>Never underestimate the power of a good night sleep</h3>
+    <section class="padded text-center bg-yellow tall-70 grid bg-image">
+        <div class="col-12-middle">
+            <h3 class="big-text">
+                <span class="small-text normal-weight">Never underestimate the power of</span> 
+                <br>a good night <span class="highlight-light">sleep</span>
+            </h3>
+        </div>
     </section>
 
     <!-------------- This is the testimonial -------------->
-    <section class="padded grid">
-        <div class="col-1"><span>"</span></div>
-        <div class="col-10">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos enim dicta tempora deserunt, minima fugit quidem magni ipsam, voluptatibus est, nihil excepturi perferendis voluptatum! Corporis deleniti aperiam saepe fugit in.</p>
+    <section class="padded-l grid">
+        <div class="col-1 text-right">
+            <span class="quotation-marks">“</span>
         </div>
-        <div class="col-1"><span>"</span></div>
+        <div class="col-10 text-center">
+            <p class="medium-text light-weight">I've never experienced sleep like this. OMG I really love this mattress. I want to buy one for every member of my family.</p>
+            <p class="subtitle">- A very happy customer</p>
+        </div>
+        <div class="col-1 text-left">
+            <span class="quotation-marks">”</span>
+        </div>
     </section>
     
-    <!-------------- This is the testimonial -------------->
-    <footer class="padded grid bg-dark">
-        <div class="col-6">
-            <h2>Let's connect</h2>
+    <!-------------- This is the footer -------------->
+    <footer class="padded grid-spaceBetween bg-dark">
+        <div class="col-5-bottom">
+            <h2>Let's <br> <span class="highlight">connect</span> </h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima incidunt quibusdam rem. Adipisci rerum aliquid non quos quisquam, placeat fugiat laudantium id amet nemo exercitationem veritatis voluptatum dicta at nobis!</p>
         </div>
-        <div class="col-6">
-            <p>Call: 04555 5555</p>
-            <p>EmaiL hello@thesleep.co</p>
-            <p>Store: 55 Main St, Chicago</p>
-            <p>Instagram: @thesleepco</p>
+        <div class="col-4-bottom">
+            <p><strong>Call:</strong> <a href="tel:#">04555 5555</a></p>
+            <p><strong>Email</strong> <a href="mailto:#">hello@thesleep.co</a></p>
+            <p><strong>Store:</strong> 55 Main St, Chicago</p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/thesleepco">@thesleepco</a></p>
         </div>
     </footer>
 
