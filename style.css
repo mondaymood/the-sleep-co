@@ -23,7 +23,7 @@ body {
     color: #192B37;
 }
 
-.padded        {padding: 5%;}
+.padded        {padding: 2%;}
 .padded-s      {padding: 1rem;}
 .padded-l      {padding: 10%;}
 
@@ -111,8 +111,20 @@ a:hover {
 
 /* ----------- Header/Footer styles ----------- */
 
-header {
+.bg-index {
     background-image: url('/images/the-sleep-co-white.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-about {
+    background-image: url('/images/the-sleep-co-coffee.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-contact {
+    background-image: url('/images/the-sleep-co-yellow.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -125,6 +137,16 @@ header h3 {
 
 footer a {
     border: none;
+}
+
+nav {
+    margin-right: 1rem;
+    height: 10%;
+}
+
+nav a {
+    display: inline-block;
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
 }
 
 /* ----------- Background images ----------- */
