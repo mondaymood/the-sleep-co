@@ -23,13 +23,17 @@ body {
     color: #192B37;
 }
 
-.padded        {padding: 2%;}
+.padded        {padding: 5%;}
 .padded-s      {padding: 1rem;}
 .padded-l      {padding: 10%;}
 
 .bg-dark {
     background-color: #192B37;
     color: white;
+}
+
+.bg-featured {
+    background-color: #FFBE00;
 }
 
 .tall-50        {min-height: 50vh;}
@@ -139,15 +143,6 @@ footer a {
     border: none;
 }
 
-nav {
-    margin-right: 1rem;
-    height: 10%;
-}
-
-nav a {
-    display: inline-block;
-    margin: 1rem 0.5rem 0.5rem 0.5rem;
-}
 
 /* ----------- Background images ----------- */
 
