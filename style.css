@@ -1,6 +1,7 @@
 /*  Colors
     Yellow: #FFBE00
-    Navy:   #192B37 */
+    Navy:   #192B37
+    Light Blue: #E3ECF2 */
 
 * {
     padding: 0;
@@ -15,6 +16,10 @@
     background-size: cover;
     min-height: 10rem;
 }
+
+.landscape {padding-bottom: 65%;}
+.portrait {padding-bottom: 125%;}
+.square {padding-bottom: 100%;}
 
 /* ----------- Universal styles ----------- */
 
@@ -36,6 +41,10 @@ body {
     background-color: #FFBE00;
 }
 
+.bg-light {
+    background-color: #E3ECF2;
+}
+
 .tall-50        {min-height: 50vh;}
 .tall-60        {min-height: 60vh;}
 .tall-70        {min-height: 70vh;}
@@ -44,6 +53,11 @@ body {
 .tall-100       {min-height: 100vh;}
 
 /* ----------- Typography styles ----------- */
+
+h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
 
 h1 {
     text-transform: lowercase;
