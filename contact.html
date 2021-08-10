@@ -27,7 +27,7 @@
 <body>
 
     <!-------------- This is the header -------------->
-    <header class="bg-index padded grid text-center tall-60">
+    <header class="bg-index grid text-center tall-60">
        <div class="header-nav col-12 grid">
            <div class="col-4 text-left">
               <a href="/index.html" class="logo">
@@ -57,7 +57,12 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam veniam animi iure corrupti, quam ea delectus, est ratione, corporis aperiam quas incidunt harum nemo facere cum quo? Temporibus, non illum!</p>
         </div>
         <div class="col-6 padded">
-            <h2>Add contact form here</h2>
+            <form>
+                <input type="text" name="_name" placeholder="Your Name">
+                <input type="email" name="_replyto" placeholder="Your Email">
+                <textarea name="message" placeholder="Tell us what you want..." rows="6"></textarea>
+                <button class="button" type="submit">SUBMIT</button>
+            </form>
         </div>
     </section>
 
