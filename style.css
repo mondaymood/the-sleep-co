@@ -229,6 +229,7 @@ input:focus, textarea:focus {
   .show-md { display: block; }
   .hide-md { display: none;  }
 
+  .md-tall-50 {min-height: 50vh;}
   .md-tall-80 {min-height: 80vh;}
 }
 
