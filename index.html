@@ -1,8 +1,18 @@
 ---
 layout: default
+features: 
+ - icon: fas fa-cloud
+   description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ipsum laudantium itaque inventore unde quia numquam repellat perspiciatis doloremque? Cupiditate voluptas ratione quos deleniti consectetur, placeat vero eaque aut unde!
+ - icon: fas fa-user
+   description: Soluta ipsum laudantium itaque inventore unde quia numquam repellat perspiciatis doloremque? Cupiditate voluptas ratione quos deleniti consectetur, placeat vero eaque aut unde!
+ - icon: fas fa-heart
+   description: Cupiditate voluptas ratione quos deleniti consectetur, placeat vero eaque aut unde! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+ - icon: fas fa-bolt
+   description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ipsum laudantium itaque inventore unde quia numquam repellat perspiciatis doloremque? Cupiditate voluptas ratione quos deleniti consectetur, placeat vero eaque aut unde!
 ---
 
     <!-------------- This is the header -------------->
+    
     <header class="bg-index grid text-center tall-100 md-tall-80">
     
         {% include header-nav.html %}
@@ -50,26 +60,18 @@ layout: default
     </section>
 
     <!-------------- These are the features -------------->
-    <section class="padded grid bg-dark">
+    <section class="padded grid-center bg-dark">
         <div class="padded-s col-12 text-center editable">
             <h2><span class="highlight">Features</span> you will love</h2>
         </div>
+        
+        {% for item in page.features %}
         <div class="padded-s col-3_sm-6_xs-12 editable">
-            <p><i class="fas fa-cloud"></i></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rem blanditiis eveniet provident voluptatem delectus temporibus possimus quasi eos esse. Culpa blanditiis maxime aperiam corrupti rem eos molestiae ut nihil?</p>
+            <p><i class="{{item.icon}}"></i></p>
+            <p>{{item.description}}</p>
         </div>
-        <div class="padded-s col-3_sm-6_xs-12 editable">
-            <p><i class="fas fa-cloud"></i></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rem blanditiis eveniet provident voluptatem delectus temporibus possimus quasi eos esse. Culpa blanditiis maxime aperiam corrupti rem eos molestiae ut nihil?</p>
-        </div>
-        <div class="padded-s col-3_sm-6_xs-12 editable">
-            <p><i class="fas fa-cloud"></i></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rem blanditiis eveniet provident voluptatem delectus temporibus possimus quasi eos esse. Culpa blanditiis maxime aperiam corrupti rem eos molestiae ut nihil?</p>
-        </div>
-        <div class="padded-s col-3_sm-6_xs-12 editable">
-            <p><i class="fas fa-cloud"></i></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rem blanditiis eveniet provident voluptatem delectus temporibus possimus quasi eos esse. Culpa blanditiis maxime aperiam corrupti rem eos molestiae ut nihil?</p>
-        </div>
+        {% endfor %}
+
     </section>
 
     <!-------------- This is the banner -------------->
