@@ -35,10 +35,10 @@ features:
         {% include header-nav.html %}
         
         <div class="col-12">
-        <h3 class="bold-weight editable">
+        <h3 class="bold-weight editable" data-aos="fade-up">
             <span class="highlight">Sleep</span> like a puppy
         </h3>
-        <h1 class="normal-weight editable">
+        <h1 class="normal-weight editable" data-aos="fade-up" data-aos-delay="500">
             The ultimate matress solution
         </h1>
         </div>
@@ -46,7 +46,7 @@ features:
 
     <!-------------- This the gallery section -------------->
     <section class="grid">
-        <div class="padded col-6_xs-12-middle">
+        <div class="padded col-6_xs-12-middle" data-aos="fade-right">
             <h2 class="editable">
                 Built to last a <span class="highlight">lifetime</span>
             </h2>
@@ -63,7 +63,7 @@ features:
         <div class="bg-image bg-pug col-6_xs-12 tall-70 md-tall-50">   
             <!---- Background image bed ---->
         </div>  
-        <div class="padded col-6_xs-12-middle editable"> 
+        <div class="padded col-6_xs-12-middle editable" data-aos="fade-left"> 
             <h2 class="editable">
                 So <span class="highlight">soft</span> you'll melt
             </h2>
@@ -83,7 +83,7 @@ features:
         </div>
         
         {% for item in page.features %}
-        <div class="padded-s col-3_sm-6_xs-12">
+        <div class="padded-s col-3_sm-6_xs-12" data-aos="fade-up" data-aos-delay="100">
             <p><i class="{{item.icon}}"></i></p>
             <p>{{item.description}}</p>
         </div>

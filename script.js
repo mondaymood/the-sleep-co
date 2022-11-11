@@ -9,6 +9,9 @@ $(".hamburger-icon").click(function(){
 
 });
 
-
+// Animate on scroll – Activate
+AOS.init({
+    duration: 1000
+});
 
 });
