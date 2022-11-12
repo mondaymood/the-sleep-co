@@ -5,6 +5,9 @@
       - portrait
       - landscape
 
+    aspect-ratios:
+      square: Square
+      
     column-sizes: 
       col-6: One Half
       col-12: Full Width
