@@ -4,7 +4,6 @@
       - square
       - portrait
       - landscape
-      square: Square
 
     column-sizes: 
       col-6: One Half
