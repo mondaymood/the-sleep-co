@@ -218,6 +218,22 @@ footer a {
     padding: 0.5%;
   }
 
+.gallery a {
+    border-bottom: none;
+}
+
+.lg-backdrop {
+    background-color: rgb(60,60,60);
+}
+
+.lg-backdrop.in {
+    opacity: 0.8;
+}
+
+.lg-sub-html {
+    background-color: rgba(20, 20, 20, 0.8);
+  }
+
 /* ----------- Buttons & form styles ----------- */
 
 input, textarea {
