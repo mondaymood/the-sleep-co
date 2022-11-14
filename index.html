@@ -1,27 +1,27 @@
 ---
 layout: default
 features:
-   -
-      icon: fas fa-user
+   -  icon: fas fa-user
+      animation-delay: 50
       description: >-
          Soluta ipsum laudantium itaque inventore unde quia numquam repellat
          perspiciatis doloremque? Cupiditate voluptas ratione quos deleniti
          consectetur, placeat vero eaque aut unde!
-   -
-      icon: fas fa-cloud
+   -  icon: fas fa-cloud
+      animation-delay: 100
       description: >-
          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ipsum
          laudantium itaque inventore unde quia numquam repellat perspiciatis
          doloremque? Cupiditate voluptas ratione quos deleniti consectetur,
          placeat vero eaque aut unde!
-   -
-      icon: fas fa-heart
+   -  icon: fas fa-heart
+      animation-delay: 150
       description: >-
          Cupiditate voluptas ratione quos deleniti consectetur, placeat vero
          eaque aut unde! Lorem ipsum, dolor sit amet consectetur adipisicing
          elit.
-   -
-      icon: fas fa-bolt
+   -  icon: fas fa-bolt
+      animation-delay: 200
       description: >-
          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ipsum
          laudantium itaque inventore unde quia numquam repellat perspiciatis
@@ -83,7 +83,7 @@ features:
         </div>
         
         {% for item in page.features %}
-        <div class="padded-s col-3_sm-6_xs-12" data-aos="fade-up" data-aos-delay="100">
+        <div class="padded-s col-3_sm-6_xs-12" data-aos="fade-up" data-aos-delay="100" data-aos-offset="{{item.animation-delay}}" >
             <p><i class="{{item.icon}}"></i></p>
             <p>{{item.description}}</p>
         </div>
